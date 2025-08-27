@@ -1,0 +1,112 @@
+body {
+    background-color: #383b3b;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container {
+    background-color: #676565;
+    height: 270px;
+    width: 1000px;
+    margin: auto;
+    border-radius: 10px;
+    padding: 30px;
+}
+.display {
+    border-color: #000;
+    background-color: #676565;
+    width: 850px;
+    justify-self: center;
+    border-color: #000;
+    height: 180px;
+    margin-top: 30px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.display h2 {
+    text-align: center;
+    font-size: 60px;
+    margin-top: 10px;
+    color: #fff;
+}
+.btns{
+   margin-top: 30px;
+   justify-self: center;
+   word-spacing: 30px;
+}
+.btns button {
+    background-color: #dc4008;
+    border-color: transparent;
+    font-size: 20px;
+    width: 90px;
+    height: 50px;
+    text-align: center;
+    border-radius: 20px 10px 20px;
+}
+.btns button:hover {
+    background-color: #f46228;
+}
+/* Responsive Design */
+@media (max-width: 1200px) {
+    .container {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .display {
+        width: 90%;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        height: auto;
+        width: 95%;
+        margin-top: 80px;
+        padding: 15px;
+    }
+    .display {
+        height: 120px;
+        width: 100%;
+    }
+    .display h2 {
+        font-size: 36px;
+    }
+    .btns button {
+        font-size: 16px;
+        width: 70px;
+        height: 40px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        height: auto;
+        width: 100%;
+        margin-top: 30px;
+        padding: 8px;
+    }
+    .display {
+        height: 80px;
+        width: 100%;
+        border-radius: 10px;
+    }
+    .display h2 {
+        font-size: 22px;
+        margin-top: 0;
+    }
+    .btns {
+        margin-top: 15px;
+        word-spacing: 10px;
+    }
+    .btns button {
+        font-size: 12px;
+        width: 60px;
+        height: 30px;
+        border-radius: 6px 12px;
+    }
+}
